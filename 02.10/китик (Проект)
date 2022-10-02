@@ -1,0 +1,24 @@
+import pyautogui
+import time
+pyautogui.moveTo(200,1050)
+pyautogui.doubleClick()
+time.sleep(2)
+pyautogui.write('Kitten')
+pyautogui.press('enter')
+pyautogui.moveTo(350,230)
+time.sleep(2)
+pyautogui.click()
+time.sleep(2)
+pyautogui.moveTo(490,430)
+time.sleep(2)
+pyautogui.click()
+time.sleep(5)
+pyautogui.moveTo(1200,50)
+time.sleep(2)
+pyautogui.click()
+otvet=int(input("Вам понравился котик?(1=да 2=нет):"))
+if otvet==1:
+    pyautogui.alert(text="Ура! Ты любишь котиков",title=":D",button="Ура!")
+if otvet==2:
+    pyautogui.alert(text="Почему ты не любишь котиков?",title="D:",button="Потому что")
+
