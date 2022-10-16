@@ -1,0 +1,43 @@
+import keyboard
+while True:
+    
+    elif keyboard.is_pressed('space')==True:
+        print("Алло")
+        break
+ 
+     elif keyboard.is_pressed('1')==True:
+        print("Как дела ")
+        break
+ 
+     elif keyboard.is_pressed('2')==True:
+        print("Нормально")
+        break
+
+     elif keyboard.is_pressed('3')==True:
+        print("Ок ")
+        break
+ 
+      elif keyboard.is_pressed('4')==True:
+        print("Ага ")
+        break
+ 
+     elif keyboard.is_pressed('5')==True:
+         print("Не ")
+         break
+ 
+     elif keyboard.is_pressed('6')==True:
+         print("Минутку ")
+         break
+  
+     elif keyboard.is_pressed('7')==True:
+         print("Пожайлуста ")
+         break
+ 
+     elif keyboard.is_pressed('8')==True:
+         print("Спасибо ")
+         break
+
+     elif keyboard.is_pressed('9')==True:
+         print("Пока ")
+         break
+
