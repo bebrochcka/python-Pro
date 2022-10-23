@@ -20,3 +20,13 @@ if (pr=="/"):
     p2 = int(input("Введите 2 число"))
     print(p1/p2)
     pyautogui.alert(text="Вам понравился калькулятор?",title="Опрос",button="Да")
+if (pr=="%"):
+    p1= int(input("Введите 1 число"))
+    p2 = int(input("Введите 2 число"))
+    print(p1%p2)
+    pyautogui.alert(text="Вам понравился калькулятор?",title="Опрос",button="Да")
+if (pr=="//"):
+    p1= int(input("Введите 1 число"))
+    p2 = int(input("Введите 2 число"))
+    print(p1//p2)
+    pyautogui.alert(text="Вам понравился калькулятор?",title="Опрос",button="Да")
