@@ -1,0 +1,8 @@
+bebr = str(input("Введите Логин"))
+bebr1 = int(input("Введите пароль"))
+while(bebr!="bebro")or(bebr1!=123):
+    print("Пароль или логин НЕ верный!")
+    bebr = str(input("Введите логин"))
+    bebr1 = int(input("Введите пароль"))
+print("Логин и пароль верные!")
+
