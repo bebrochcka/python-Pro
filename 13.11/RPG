@@ -1,0 +1,18 @@
+import random
+gg_hp=10
+gv_hp=100
+gg_ur=7
+gv_ur=random.randrange(0,3)
+ub_vg=0
+while(gg_hp>=0)or(gv_hp==0):
+    gv_hp=gv_hp-gg_ur
+    print(gv_hp)
+    gg_hp=gg_hp-gv_ur
+    print(gg_hp)
+    while(gg_hp>0)and(gv_hp==0):
+        print(gg_hp)
+        gg_ur=gg_ur+3
+        ub_vg=ub_vg+1
+    while(gg_hp<=0)and(gv_hp>0):
+        print(ub_vg)
+    
