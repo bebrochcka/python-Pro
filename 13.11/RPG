@@ -1,18 +1,43 @@
 import random
-gg_hp=10
+import time
+ggdgs=input("Выберите класс(1=40хп 7 ур 2=50хп 5 ур 3=30хп 10ур)")
+if(ggdgs==1):
+    gg_hp=40
+    gg_ur=6
+if(ggdgs==2):
+    gg_hp=50
+    gg_ur=5
+if(ggdgs==3):
+    gg_hp=30
+    gg_ur=10
 gv_hp=100
-gg_ur=7
-gv_ur=random.randrange(0,3)
+beb=3
+gv_ur=random.randrange(0,beb)
 ub_vg=0
-while(gg_hp>=0)or(gv_hp==0):
+print("ХП врага:")
+print(gv_hp)
+print("ХП твоего героя:")
+print(gg_hp)
+while((gg_hp>=0)or(gv_hp<=0)):
     gv_hp=gv_hp-gg_ur
+    gv_ur=random.randrange(0,beb)
+    print("ХП врага:")
     print(gv_hp)
+    time.sleep(2)
     gg_hp=gg_hp-gv_ur
+    print("ХП твоего героя:")
     print(gg_hp)
-    while(gg_hp>0)and(gv_hp==0):
+    time.sleep(2)
+    if((gg_hp>0)and(gv_hp<=0)):
+        print("ХП твоего героя после битвы:")
         print(gg_hp)
+        gv_hp=100
         gg_ur=gg_ur+3
         ub_vg=ub_vg+1
-    while(gg_hp<=0)and(gv_hp>0):
-        print(ub_vg)
-    
+        gv_ur=gv_ur+1
+    if(ub_vg==5):
+        gg_hp=gg_hp+10
+if((gg_hp<=0)and(gv_hp>0)):
+    print("ты умер! Убито врагов:")
+    print(ub_vg)
+
