@@ -1,0 +1,15 @@
+import pyautogui
+import time
+aga=1
+ay=int(input("Введите число"))
+for step in range(ay):
+    pyautogui.hotkey('win','r')
+    pyautogui.write("notepad")
+    pyautogui.press('Enter')
+    time.sleep(2)
+    pyautogui.write("a")
+    pyautogui.hotkey('ctrl','s')
+    time.sleep(1)
+    pyautogui.write(str(aga))
+    pyautogui.press('Enter')
+    aga=aga+1
