@@ -1,0 +1,8 @@
+import pyautogui
+import time
+ay=int(input("Введите число от 1 до 9"))
+pyautogui.moveTo(500,1000)
+pyautogui.click()
+time.sleep(3)
+for step in range(ay-1):
+    pyautogui.hotkey('ctrl','t')
