@@ -1,0 +1,14 @@
+count=0
+suma=0
+flag=0
+for i in range(4):
+    a=int(input("Введите число"))
+    if(a>0):
+        count=count+1
+        suma=suma+a
+        flag=flag+1
+if(flag<=0):
+    print("NO")
+else:
+    print(count)
+    print(suma)
