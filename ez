@@ -1,0 +1,28 @@
+import pyautogui
+import time
+af=
+bf=
+print("Могу нарисовать только космос")
+a=str(input("Введите то что нужно нарисовать "))
+if(a=="космос"):
+      pyautogui.press('win')
+      pyautogui.hotkey('shift','alt')
+      pyautogui.write("paint")
+      pyautogui.press('Enter')
+      time.sleep(2)
+      pyautogui.moveTo(381,70)
+      pyautogui.click()
+      pyautogui.moveTo(381,190)
+      pyautogui.click()
+      pyautogui.moveTo(993,56)
+      pyautogui.click()
+      pyautogui.moveTo(446,73)
+      pyautogui.click()
+      pyautogui.moveTo(749,76)
+      pyautogui.click()
+      pyautogui.moveTo(821,277)
+      time.sleep(1)
+      pyautogui.click()
+      for i in range(20)
+      pyautogui.moveTo(749,76)
+      pyautogui.click()
