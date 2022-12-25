@@ -1,0 +1,39 @@
+bebr=int(input("Впишите год"))
+aboba=bebr-1900
+aboba=aboba%12
+ab=bebr%10
+if(ab==0)or(ab==1):
+    print("цвет:Белый")
+if(ab==2)or(ab==3):
+    print("цвет:Черный")
+if(ab==4)or(ab==5):
+    print("цвет:Голубой")
+if(ab==6)or(ab==7):
+    print("цвет:Красный")
+if(ab==8)or(ab==9):
+    print("цвет:Желтый")
+if(aboba==0):
+    print("Животное:Крыса")
+if(aboba==1):
+    print("Животное:Буйвол")
+if(aboba==2):
+    print("Животное:Тигр")
+if(aboba==3):
+    print("Животное:Кролик")
+if(aboba==4):
+    print("Животное:Дракон")
+if(aboba==5):
+    print("Животное:Змея")
+if(aboba==6):
+    print("Животное:Лошадь")
+if(aboba==7):
+    print("Животное:Овца")
+if(aboba==8):
+    print("Животное:Обесьяна")
+if(aboba==9):
+    print("Животное:Петух")
+if(aboba==10):
+    print("Животное:Собака")
+if(aboba==11):
+    print("Животное:Свинья")
+
