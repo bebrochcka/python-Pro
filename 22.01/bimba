@@ -1,0 +1,9 @@
+bebr=[]
+ber=0
+a=int(input("Сколько чисел добавить в список?"))
+for step in range (a):
+    step=int(input("какие числа добавить?"))
+    bebr.append(step)
+    if(step%3!=0):
+        ber=ber+1
+print(ber)
