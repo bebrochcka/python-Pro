@@ -1,0 +1,9 @@
+a=[]
+for step in range(12):
+    a.append('*')
+    a.append('0')
+    a.append('#')
+    a.append('+')
+    a.append('!')
+print(a)
+print(len(a))
