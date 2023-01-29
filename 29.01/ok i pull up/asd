@@ -1,0 +1,10 @@
+a=[]
+bebr=0
+ind=0
+n=int(input("Сколько чисел добавить?"))
+for i in range(n):
+    a.append(int(input("Какие числа добавить?")))
+    if(a[ind]>bebr):
+        bebr=a[ind]
+        ind=ind+1
+print(bebr)
