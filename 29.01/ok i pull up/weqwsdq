@@ -1,0 +1,8 @@
+a=[]
+ind=0
+n=int(input("Сколько чисел добавить?"))
+for i in range(n):
+    a.append(int(input("Какие числа добавить?")))
+    ind=ind+1
+a.append('@')
+print(a[ind-1])
