@@ -1,0 +1,7 @@
+a=[]
+b=[]
+n=int(input("Сколько чисел добавить?"))
+for i in range(n):
+    a.append(int(input("Какие числа добавить?")))
+    b.append(0-a[i])
+print(b)
