@@ -1,0 +1,27 @@
+m=[['-','-','-'],['-','-','-'],['-','-','-'],['','','']]
+k=0
+for bebra in range(5):
+    a=int(input("Куда хотите поставить крестик?(строку)"))
+    b=int(input("Куда хотите поставить крестик?(столбец)"))
+    a=a-1
+    b=b-1
+    k=k+1
+    m[a][b]='*'
+    for i in range (len(m)):
+        for j in range(len(m[i])):
+            print(m[i][j],end=' ')
+        print()
+    a=int(input("Куда хотите поставить нолик?(строку)"))
+    b=int(input("Куда хотите поставить нолик?(столбец)"))
+    a=a-1
+    b=b-1
+    m[a][b]='0'
+    k=k+1
+    for i in range (len(m)):
+        for j in range(len(m[i])):
+            print(m[i][j],end=' ')
+        print()
+for i in range (len(m)):
+    for j in range(len(m[i])):
+        print(m[i][j],end=' ')
+    print()
