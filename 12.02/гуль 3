@@ -1,0 +1,33 @@
+m=[['-','-','-'],['-','-','-'],['-','-','-'],['','','']]
+k=0
+import random
+while(k!=9):
+    a=int(input("Куда хотите поставить крестик?(строку)"))
+    b=int(input("Куда хотите поставить крестик?(столбец)"))
+    a=a-1
+    b=b-1
+    k=k+1
+    m[a][b]='*'
+    for i in range (len(m)):
+        for j in range(len(m[i])):
+            print(m[i][j],end=' ')
+        print()
+    ab=random.randint(1,3)
+    ba=random.randint(1,3)
+    ab=ab-1
+    ba=ba-1
+    while(m[ab][ba]!='-'):  
+        ab=random.randint(1,3)
+        ba=random.randint(1,3)
+        ab=ab-1
+        ba=ba-1
+    m[ab][ba]='0'
+    k=k+1
+    for i in range (len(m)):
+        for j in range(len(m[i])):
+            print(m[i][j],end=' ')
+        print()
+for i in range (len(m)):
+    for j in range(len(m[i])):
+        print(m[i][j],end=' ')
+    print()
