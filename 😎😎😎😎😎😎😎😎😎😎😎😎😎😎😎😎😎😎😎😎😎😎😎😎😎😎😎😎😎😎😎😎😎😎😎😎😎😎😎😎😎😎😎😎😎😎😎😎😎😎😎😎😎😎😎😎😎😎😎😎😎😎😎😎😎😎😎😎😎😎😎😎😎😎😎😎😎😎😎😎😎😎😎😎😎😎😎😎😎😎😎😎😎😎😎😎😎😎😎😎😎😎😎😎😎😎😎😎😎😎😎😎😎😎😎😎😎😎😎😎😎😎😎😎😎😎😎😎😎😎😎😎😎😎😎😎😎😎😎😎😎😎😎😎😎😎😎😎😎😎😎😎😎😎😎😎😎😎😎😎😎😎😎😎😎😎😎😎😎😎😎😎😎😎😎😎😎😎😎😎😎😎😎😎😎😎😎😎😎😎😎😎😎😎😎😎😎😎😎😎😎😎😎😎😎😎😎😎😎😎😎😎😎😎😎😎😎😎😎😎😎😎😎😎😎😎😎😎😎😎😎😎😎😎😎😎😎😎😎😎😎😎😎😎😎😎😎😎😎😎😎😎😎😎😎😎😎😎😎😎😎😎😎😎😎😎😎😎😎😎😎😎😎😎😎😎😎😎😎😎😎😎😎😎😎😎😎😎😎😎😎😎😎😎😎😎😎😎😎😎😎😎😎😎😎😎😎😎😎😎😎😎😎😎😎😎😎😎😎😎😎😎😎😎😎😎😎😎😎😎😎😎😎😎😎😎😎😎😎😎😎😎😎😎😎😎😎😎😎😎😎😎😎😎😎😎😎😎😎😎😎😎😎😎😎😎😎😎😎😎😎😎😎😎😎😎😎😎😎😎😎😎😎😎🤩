@@ -1,0 +1,11 @@
+p=0
+a=int(input("Напишите одно число"))
+b=int(input("Напишите ещё одно число"))
+if(a>b):
+    a=p
+    b=a
+    p=b
+def ez(a,b):
+    global p
+    for i in range
+print(ez(a,b))
