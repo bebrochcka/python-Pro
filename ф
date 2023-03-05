@@ -1,0 +1,18 @@
+a=0
+pon1=int(input("Напиши одно число(от)"))
+pon2=int(input("Напиши ещё одно число(до)"))
+pon3=int(input("И ещё одно число(число в диапозоне)"))
+if(pon1>pon2):
+    a=pon1
+    pon1=pon2
+    pon2=a
+    
+def ez(a,b,c):
+    for i in range(a,b):
+        if(i==c):
+            return c
+        
+    print("Такое число не входит в диаопзон")
+    return None
+print(ez(pon1,pon2,pon3))
+    
