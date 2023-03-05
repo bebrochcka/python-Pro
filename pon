@@ -1,0 +1,7 @@
+ab=int(input("Напишите одно число"))
+def pon(z):
+    a=1
+    for i in range(1,z+1):
+        a=a*i
+    return a
+print(pon(ab))
