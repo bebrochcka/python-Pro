@@ -1,0 +1,12 @@
+n=int(input("Напишите число"))
+y=0
+def f(c):
+    global y
+    print((str(c)+" ")*c)
+    
+    y+=1
+    if(y==c):
+        print((((c)*c)*c))
+        return False
+    f(c)
+f(n)
