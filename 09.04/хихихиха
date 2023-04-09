@@ -1,0 +1,26 @@
+bebr=0
+tablica={'Артём':'555','Маша':'444','Миша':'333','Никита':'222','Андрей':'111'}
+g=0
+while(bebr!=1):
+    a=str(input("Что хотите сделать?"))
+    if(a=='Таблица'):
+        print(tablica)
+    if(a=='Добавить'):
+        b=str(input("Кого хотите добавить?"))
+        c=str(input("Сколько у него/неё баллов"))
+        tablica[b]=c
+        for i in tablica.keys():
+            if(tablica[b]==tablica[i]):
+                tablica[b]=c
+            if(b!=tablica):
+                print("Такого человека нет")
+    if(a=='Показать баллы участника'):
+        f=str(input("Под каким именем показать?"))
+        print("Рекорд этого участника "+tablica[f])
+    if(a=='Показать лидера'):
+        for i in tablica.values():
+            if(int(g)<int(i)):
+                g=i
+        for pon in tablica.keys():
+            if(tablica[pon]==g):
+                print(pon,g)
