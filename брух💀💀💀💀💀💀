@@ -1,0 +1,82 @@
+import keyboard
+import time
+
+def pkot():
+    print("|\          /|")
+    print("| \        / |")
+    print("|| \______/ ||")
+    print("|            |       __")
+    print("|   •   •    |      /  |")
+    print("|    ■■■     |   __/  /")
+    print("|   \_|_/    |__/ ___/")
+    print("|____________|___/")
+    print("    |    | ")
+    print("  __|    |__")
+def tkot():
+    print("        /  /")
+    print("|\     /  / /|")
+    print("| \   /__/ / |")
+    print("|| \_|__|_/ ||")
+    print("|            |       __")
+    print("|   >   <    |      /  |")
+    print("|    ■■■     |   __/  /")
+    print("|   \_|_/    |__/ ___/")
+    print("|____________|___/")
+    print("    |    | ")
+    print("  __|    |__")
+def bkot():
+    print("      \/       ")
+    print("|\    /\    /|")
+    print("| \  /__\  / |")
+    print("|| \/____\/ ||")
+    print("|            |       __")
+    print("|   •   •    |      /  |")
+    print("|    ■■■     |   __/  /")
+    print("|   \_|_/    |__/ ___/")
+    print("|____________|___/")
+    print("    |    | ")
+    print("  __|    |__")
+def hkot():
+    print("      \/       ")
+    print("|\    /\    /|")
+    print("| \  /__\  / |")
+    print("|| \/____\/ ||")
+    print("|            |       __")
+    print("|   >   <    |      /  |")
+    print("|    ■■■     |   __/  /")
+    print("|   \_|_/    |__/ ___/")
+    print("|__________ _|___/")
+    print("    |    | ")
+    print("  __|    |__")
+b=0
+af=1
+pon=pkot
+bon=tkot
+while(b!=11111111):
+    if(keyboard.is_pressed('Ctrl')):
+        print("На вашем балансе")
+        print(b)
+    if(keyboard.is_pressed('Tab')):
+        a=str(input("Что хотите купить?Вы можете купить улучшения или костюм на кота"))
+        if(a=="Улучшение"):
+            ab=str(input("1 улучшение даёт за 1 клик 5 монеток,стоит 10 монеток.2 улучшение даёт за 1 клик 10 монеток,стоит 100 монеток"))
+            if(ab=="первое"):
+                print("Вы купили первое улучшение	")
+                b=b-10
+                af=5
+            if(ab=="второе"):
+                print("Вы купили второе улучшение")
+                b=b-100
+                af=10
+        else:
+            intr=str(input("В наличии:1.Кот в шапочке-5 монеток.Что будете покупать?"))
+            if(intr=="первый"):
+                print("Вы купили первый костюм")
+                pon=bkot
+                bon=hkot
+    if(keyboard.is_pressed('Alt')):
+        b=b+af
+        pon()
+        time.sleep(0.5)
+        bon()
+        time.sleep(2)
