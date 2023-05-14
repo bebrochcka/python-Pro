@@ -1,0 +1,7 @@
+bebr=str(input("Если вы новый пользователь то зарегистрируютесь, а если нет то авторизируйтесь"))
+if(bebr=="Регистрация"):
+    bebra=str(input("Введите логин"))
+    bebro=str(input("Введите пароль"))
+    f=open("file.txt",'w')
+    f.write(bebra /n bebro)
+    f.close
