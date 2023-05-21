@@ -1,0 +1,151 @@
+import keyboard
+import time
+
+def pkot():
+    print("     |\          /|")
+    print("     | \        / |")
+    print("     || \______/ ||")
+    print("     |            |       __")
+    print("     |   •   •    |      /  |")
+    print("     |    ■■■     |   __/  /")
+    print("     |   \_|_/    |__/ ___/")
+    print("     |____________|___/")
+    print("         |    | ")
+    print("       __|    |__")
+def tkot():
+    print("              /  /")
+    print("      |\     /  / /|")
+    print("      | \   /__/ / |")
+    print("      || \_|__|_/ ||")
+    print("      |            |       __")
+    print("      |   >   <    |      /  |")
+    print("      |    ■■■     |   __/  /")
+    print("      |   \_|_/    |__/ ___/")
+    print("      |____________|___/")
+    print("          |    | ")
+    print("        __|    |__")
+def bkot():
+    print("            \/       ")
+    print("      |\    /\    /|")
+    print("      | \  /__\  / |")
+    print("      || \/____\/ ||")
+    print("      |            |       __")
+    print("      |   •   •    |      /  |")
+    print("      |    ■■■     |   __/  /")
+    print("      |   \_|_/    |__/ ___/")
+    print("      |____________|___/")
+    print("          |    | ")
+    print("        __|    |__")
+def hkot():
+    print("            \/       ")
+    print("      |\    /\    /|")
+    print("      | \  /__\  / |")
+    print("      || \/____\/ ||")
+    print("      |            |       __")
+    print("      |   >   <    |      /  |")
+    print("      |    ■■■     |   __/  /")
+    print("      |   \_|_/    |__/ ___/")
+    print("      |__________ _|___/")
+    print("          |    | ")
+    print("        __|    |__")
+def realcat():
+    print("          ╱|、")
+    print("         (˚ˎ 。7  ")
+    print("          |、˜〵  ")
+    print("          じしˍ,)ノ")
+def realcath():
+    print("             / /")
+    print("            /_/ ")
+    print("          ╱||_|")
+    print("         (>. <7  ")
+    print("          |、˜〵  ")
+    print("          じしˍ,)ノ")
+b=0
+af=1
+hungr=50
+pon=pkot
+bon=tkot
+bv=0
+while(b!=1000):
+    if(keyboard.is_pressed('Ctrl')):
+        if(bv==0):
+            print("На вашем балансе")
+            print(b)
+            print("Кот не голоден на")
+            print(hungr)
+            bv=bv+1
+    if(keyboard.is_pressed('Tab')):
+        a=str(input("Что хотите купить?Вы можете купить улучшения или костюм на кота"))
+        if(a=="улучшение"):
+            ab=str(input("1.Клубок даёт за 1 клик 5 монеток,стоит 10 монеток.2.Когтеточка даёт за 1 клик 10 монеток,стоит 100 монеток"))
+            if(ab=="первое"):
+                print("Вы купили клубок")
+                b=b-10
+                af=5
+            if(ab=="второе"):
+                print("Вы купили когтеточку")
+                b=b-100
+                af=10
+        else:
+            intr=str(input("В наличии:1.Кот в шапочке-5 монеток,2.непонимающй мини-кот-15 монеток.Что будете покупать?"))
+            if(intr=="первый"):
+                print("Вы купили первый костюм")
+                b=b-5
+                pon=bkot
+                bon=hkot
+            if(intr=="второй"):
+                print("Вы купили второй костюм")
+                b=b-15
+                pon=realcat
+                bon=realcath
+
+    if(keyboard.is_pressed('Alt')):
+        b=b+af
+        pon()
+        time.sleep(0.5)
+        bon()
+        bv=0
+        time.sleep(2)
+    if(keyboard.is_pressed('b')):
+        print("Вы перешли в режим мытья.Здесь вы можете помыть свое котика.")
+        print("_______________")
+        print("_________     \\")
+        print("        \_____/")
+        print("               ")
+        print("               ")
+        print("               ")
+        print("               ")
+        pon()
+        time.sleep(3)
+    if(keyboard.is_pressed("q")):
+        print("_______________")
+        print("_________     \\")
+        print("        \_____/")
+        print("          | | |")
+        print("           | |")
+        print("          | | |")
+        print("           | | ")
+        print("          | | |")
+        print("           | | ")
+        bv=0
+        pon()
+        print("На удивление вашему коту это понравилось")
+        b=b+af
+        time.sleep(3)
+    if(keyboard.is_pressed("w")):
+        print("Вы перешли в режим кормления кота.Здесь вы можете покормить кота когда он голоден.")
+        print("Из еды в наличии есть:рыбка-стоит 5 монеток и восстонавлвает 20% голода,корм-стоит 3 монетки не очень вкусный,но нормальный восстанавливает 15% голода.")
+        pon()
+    if(keyboard.is_pressed("z")):
+        bebrochcka=str(input("Что хотите купить?"))
+        if(bebrochcka=="Рыбка"):
+            print("Ваш котёнок доволен!")
+            b=b-5
+            hungr=hungr+20
+            bon()
+        if(bebrochcka=="Корм"):
+            print("Ваш котёнок доволен!")
+            b=b-3
+            hungr=hungr+15
+            bon()
+print("Вы прошли игру!")
